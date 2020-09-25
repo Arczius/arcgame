@@ -22,6 +22,8 @@ var sleep1 = prompt("its a cold morning, you are in your bed, its time to get up
 	if (sleep1 == "1") {
 		alert("you decide to wake up");
 		alert("when you go downstairs you see your mother, she sees you too and says good morning kiddo");
+		alert("today we are going to see the Mosty Tower");
+		var resp1 = prompt("so what do you think of that kiddo?" + "\n" + "1: thats so cool" + "\n" + "2: no thanks id rather stay home")
 	}
 	else if (sleep1 == "2") {
 		alert("you go back go sleep");
