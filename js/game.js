@@ -11,7 +11,7 @@ alert("it will show options with the numbers like 1, 2, 3");
 var test = prompt("select the correct number if you understand. " + "\n" + "1: yes" + "\n" + "2: no");
 
 if (test == "1"){
-	alert("good job");
+	alert("good job you selected the good option");
 }
 else if(test == "2"){
 	alert("sorry it doesnt work like that");
@@ -38,6 +38,16 @@ var sleep1 = prompt("its a cold morning, you are in your bed, its time to get up
 			var howru = prompt("how do you respond?" + "\n" + "1: im good, thanks" + "\n" + "2: i had a really weird dream about you two killing me");
 			if(howru == "1"){
 				alert("she says ahh thats good to hear");
+				var icecream = prompt("do you want an icecream?" + "\n" + "1: yes ofcourse" + "\n" + "2: no thank you"); //natuurlijk is dit een ja, wie wilt er nou geen ijsje?
+					if(icecream == "1"){
+						alert("you go get an icecream and eat it");
+						alert("this is one of the good endings, you did it you beat the game");
+						document.write("you did well");
+					}
+					else if(icecream == "2"){
+						alert("ohh you silly kid, who doesnt want an icecream says she when she slids a knife through your neck");
+						document.write(DIED);
+					}
 
 			}
 			else if(howru == "2"){ 
@@ -48,6 +58,15 @@ var sleep1 = prompt("its a cold morning, you are in your bed, its time to get up
 					alert("you enter the rollercoaster");
 					alert("its a fun ride");
 					alert("when you get out of it you go to the bathroom");
+					alert("its a big bathroom with multiple toilets");
+					alert("your all alone in it, untill you hear someone entering");
+					alert("you dont think alot of it, so when you get out you dont expect anything weird");
+					alert("the person who entered the bathroom wears a hockey mask and points a gun at your head");
+					alert("the last thing they say before they pull the trigger is goodnight");
+					document.write(DIED);
+				}
+				else if (rollcoaster == "2"){
+					alert("you decide to go to the bathroom");
 					alert("its a big bathroom with multiple toilets");
 					alert("your all alone in it, untill you hear someone entering");
 					alert("you dont think alot of it, so when you get out you dont expect anything weird");
