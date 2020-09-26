@@ -1,6 +1,7 @@
 //Damian Vaartmans
 //99061149
 //software development
+
 const DIED = "you died, refresh to try again"
 
 alert("WARNING THIS GAME ISNT FOR PEOPLE EASILY DISTURBED");
@@ -35,6 +36,26 @@ var sleep1 = prompt("its a cold morning, you are in your bed, its time to get up
 			alert("once we get there you see your aunt");
 			alert("she says hello " + fname + ", how are you?");
 			var howru = prompt("how do you respond?" + "\n" + "1: im good, thanks" + "\n" + "2: i had a really weird dream about you two killing me");
+			if(howru == "1"){
+				alert("she says ahh thats good to hear");
+
+			}
+			else if(howru == "2"){ 
+			alert("ohw what a weird dream she says");
+			alert("well dont worry we wouldn't kill you");
+			var rollcoaster = prompt("do you want to go into the rollercoaster?" + "\n" + "1: ofcourse" + "\n" + "2: no sorry, i dont really like rollercoasters");
+				if(rollcoaster == "1"){
+					alert("you enter the rollercoaster");
+					alert("its a fun ride");
+					alert("when you get out of it you go to the bathroom");
+					alert("its a big bathroom with multiple toilets");
+					alert("your all alone in it, untill you hear someone entering");
+					alert("you dont think alot of it, so when you get out you dont expect anything weird");
+					alert("the person who entered the bathroom wears a hockey mask and points a gun at your head");
+					alert("the last thing they say before they pull the trigger is goodnight");
+					document.write(DIED);
+				}
+			}
 		}
 	}
 	else if (sleep1 == "2") {
@@ -67,6 +88,11 @@ var sleep1 = prompt("its a cold morning, you are in your bed, its time to get up
 		 				document.write(DIED);
 		 			}
 		 		}
+		 	}
+		 	else if(pool1 == "2"){
+		 		alert("all good kiddo, we will just stay here for the rest of the day watching movies");
+		 		alert("good job, you have gotten the good ending, there are alot of other endings so please play again");
+		 		document.write("you did well");
 		 	}
 		}
 		else if(yell1 == "2"){
