@@ -1,6 +1,7 @@
 //Damian Vaartmans
 //99061149
 //software development
+const DIED = "you died, refresh to try again"
 
 alert("WARNING THIS GAME ISNT FOR PEOPLE EASILY DISTURBED");
 alert("Welcome to the Arc Game");
@@ -44,12 +45,34 @@ var sleep1 = prompt("its a cold morning, you are in your bed, its time to get up
 		 	alert("you apologize to her" + "\n" + "she says that it is ok," + "\n" + "she has a special plan for today");
 		 	alert("she tells you that you two are going to the pool");
 		 	var pool1 = prompt("do you want to go with your mom to the pool?" + "\n" + "1: yes ofcourse" + "\n" + "2: no i dont want to go to the pool");
-
+		 	if(pool1 == "1"){
+		 		alert("you and your mom get in the car to go to the pool");
+		 		var odd1 = prompt("you notice something odd about her, what do you do?" + "\n" + "1: ask her what is up" + "\n" + "2: you dont do anything");
+		 		if(odd1 == "1"){
+		 			alert("you ask her what is going on");
+		 			alert("she tells you not to worry");
+		 			alert("she continues driving");
+		 			alert("she drives up on a cliff");
+		 			alert("you hear her screaming see you on the other side");
+		 			document.write(DIED);
+		 		}
+		 		else if(odd1 == "2") {
+		 			alert("you decide not to ask her whats going on");
+		 			alert("she stops at the gas station");
+		 			alert("you hear her whispering, im sorry kiddo");
+		 			alert("she pulls a gun and sets it to your head");
+		 			var lastw = prompt("she asks you what are your last words?" + "\n" + "1: please let me live, you can overcome this" + "\n" + "2: i always knew it was gonna end this way");
+		 			if(lastw == "1"){
+		 				alert("she tells you she cant let you live and pulls the trigger");
+		 				document.write(DIED);
+		 			}
+		 		}
+		 	}
 		}
 		else if(yell1 == "2"){
 			alert("you yell back at your mom");
 			alert("she runs to the kitchen and you decide to follow her");
 			alert("when she gets to the kitchen she stabs you, you can slowly see the world become blurry, you see she stab's herself before everything goes black");
-			document.write("you died, refresh to start over");
+			document.write(DIED);
 		}
 	}
